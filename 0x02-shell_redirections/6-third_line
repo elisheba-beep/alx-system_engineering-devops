@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "awk '{if(NR==3)print $0}'"./iacta
+echo "awk '{if(NR==3)print\$0}'"./iacta
