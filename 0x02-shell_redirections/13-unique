@@ -1,2 +1,4 @@
 #!/bin/bash
+read userinput
+echo "$userinput" >> list
 cat list | sort | uniq
