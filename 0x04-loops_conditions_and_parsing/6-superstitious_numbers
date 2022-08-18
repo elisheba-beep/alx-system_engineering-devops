@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script displays superstitious numbers
+COUNTER=1
+while [ "$COUNTER" -le 20 ];
+do
+	echo $COUNTER
+	(( COUNTER += 1 ))
+	case "$COUNTER" in
+	4) echo "4"
+	echo "bad luck from China"
+	(( COUNTER += 1 ))
+	;;
+	9) echo "9"
+	echo "bad luck from Japan"
+	(( COUNTER += 1 ))
+	;;
+	17) echo "17"
+	echo "bad luck from Italy"
+	(( COUNTER += 1 ))
+	;;
+	esac
+done
