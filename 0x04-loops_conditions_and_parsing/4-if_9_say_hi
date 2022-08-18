@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+COUNTER=1
+while [ "$COUNTER" -le 10 ];
+do
+	echo "Best School"
+	(( COUNTER += 1 ))
+	if [ "$COUNTER" -eq 9 ];
+	then
+		echo "Best School"
+		echo "Hi"
+		(( COUNTER += 1 ))
+	fi
+done
+
